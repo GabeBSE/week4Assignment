@@ -1,14 +1,22 @@
 
 
-// STEP 1: Create an array...
+// STEP 1: Create an array called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93.
+// a. Programmatically subtract the value of the first element in the array from the value in the last 
+// element of the array.
+// *Do not use numbers to reference the last element, find it programmatically.
+// *ages[7] - ages[0] is not allowed!
+// b. Add a new age to your array and repeat the step above to ensure it is dynamic. (works for arrays of 
+// different lengths).
+// c. Use a loop to iterate through the array and calculate the average age.
 
 // First I will start by creating the array with the provided values using [].
 // Using the keyword let, I can declare my variable, ages, ending the statement with a semicolon.
-//Zero based 0, 1,  2,  3, 4, 5,  6,  7
+// Zero based 0, 1,  2,  3, 4, 5,  6,  7
 let agesA = [3, 9, 23, 64, 2, 8, 28, 93]; 
 
 // Next I can subtract the value of the first element from the last element. Using the .length function
-// will allow me to do this, but since I need to subtract from the last element in the array, I need to place -1 after
+// will allow me to do this, but since I need to subtract from the last element in the array, I need to 
+// place -1 after
 // .length due to arrays being zero based.
 let lastIndex = agesA.length - 1;
 
@@ -42,7 +50,9 @@ console.log(`Average age: ${averageAge}`);
 
 //-------------------------------------------------------------------------------
 
-// STEP 2: Create an array...
+// STEP 2: Create an array called names that contains the following values: 'Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'.
+// a. Use a loop to iterate through the array and calculate the average number of letters per name.
+// b. Use a loop to iterate through the array again and concatenate all the names together, separated by spaces.
 
 //First I created a names array by delcaring a variable calling it names. Then I used the [] to show the array
 //placing the provided names inside the array.
