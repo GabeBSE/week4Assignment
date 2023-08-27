@@ -103,7 +103,7 @@ for (let i = 0; i < names.length; i++) {
     }
 }
 
-console.log(concatenatedNames);
+console.log(concatenatedNames); // Prints "Sam, "
 
 //-----------------------------------------------------------------------------------
 
@@ -111,21 +111,21 @@ console.log(concatenatedNames);
 // By using .length - 1   Ex.
 const array = [4, 2, 7, 9];
 const lastElement = array[array.length - 1];
-console.log('Question 3 example:' + lastElement);
+console.log('By using .length -1:' + lastElement); // Prints 9
 
 //-----------------------------------------------------------------------------------
 // STEP 4. How do you access the first element of any array?
 // Using by index notation. Ex.  
 const firstElement = array[0]
 
-console.log('Question 4 example:' + firstElement);
+console.log('First element:' + firstElement); // Prints "First element is:" 4
 
 //----------------------------------------------------------------------------------
 
 // STEP 5. Create a new array called nameLengths. Write a loop to iterate over the previously created names 
 // array and add the length of each name to the nameLengths array.
 
-//Same = 3, Tommy = 5, Tim = 3, Sally = 5, Buck = 4, Bob = 3  
+//Sam = 3, Tommy = 5, Tim = 3, Sally = 5, Buck = 4, Bob = 3  
 //First I converted the name characters into numbers values for each name. Then I declared nameLengths as my variable
 //and set it equal to the number values in an array ending the statement with semicolon.                   
 const nameLengths = [3, 5, 3, 5, 4, 3];
@@ -147,24 +147,25 @@ for (let i = 0; i < nameLengths.length; i++) {
 }
 
 //Next I am printing the sum to the browser, testing to see of the code works. 
-console.log('Sum of all elements in array:' + sum);
+console.log('Sum of all elements in array:' + sum); // prints 23
 
 //-----------------------------------------------------------------------------------
 
 // STEP 7. Write a function that takes two parameters, word and n, as 
 //arguments and returns the word concatenated to itself n number of times.
 
-function myWord(Word, n) {   
-   let cancatenated = Word;
-   for (let i = 1 ; i < n; i++) {
-    cancatenated += Word;
+function myWord(Word, n) { // I defind a function called "myWord" gave two parameters, "Word and "n".  
+   let cancatenated = Word; // I'm declaring cancatenated as my "Word"
+   for (let i = 1 ; i < n; i++) { // Here, the loop starts from "i = 1". I used 1 because I already added "Word" to
+                                  // "let concatenated = Word".
+    cancatenated += Word; // Here the "Word" is added to the concatenated string.
    }
-   return cancatenated;
+   return cancatenated; // When the loop completes, the function returns the final concatenated string.
 }
 
 
-let cResults = myWord("cancatenated",3);
-console.log(cResults);
+let cResults = myWord("cancatenated",3); // Here I'm calling "cancatenated" 3 times
+console.log(cResults); // This will print "cancatenatedcancatenatedcancatenated"
 
 //------------------------------------------------------------------------------------ 
 
@@ -177,7 +178,7 @@ function myFullName(firstName, lastName) { //function w/ two parameters.
 }
 
 const fullName = myFullName('Gabe', 'Avalos'); //this function is calling my full name with the values I gave.
-console.log(fullName); // here I am printing my full name to the browser, which will show "Gabe Avalos"
+console.log(fullName); // This will print "Gabe Avalos"
  
 //------------------------------------------------------------------------------------
 
@@ -196,7 +197,7 @@ const numbers = [ 25, 60, 45, 30];//I'm defining the array of numbers here.
 const sumResult = willSumBeGreaterThan100(numbers);//Here I'm calling willSumBeGreaterThan100 function with the 
 //numbers array in parentheses. The function will calculate the sum of the numbers in the array to find out if
 // it's greater than 100.
-console.log(sumResult); //here my cResults is returned and printed to the browser.
+console.log(sumResult); // This will print "true"
 
 //----------------------------------------------------------------------------------
 
@@ -210,7 +211,7 @@ function averageOfNumbers(numbersArray) {  //I define a function, name it and pl
     }
     const sum = numbersArray.reduce((total, num) => total + num, 0);  //Since we don't have an empty array, this line
     // will calculate the sum of all numbers using the .reduce method.
-    const average = sum / tNumbers.length;  //After the sum is calculated, this function will divide divide the sum by
+    const average = sum / tNumbers.length;  // After the sum is calculated, this function will divide the sum by
     //length of the numbersArray.
     return average;//This returns the calculated average.
 }    
@@ -218,7 +219,7 @@ function averageOfNumbers(numbersArray) {  //I define a function, name it and pl
 const tNumbers = [6, 3, 5, 13]; //Here the named array tNumbers is defined containing 6,3,5,13.
 const avg = averageOfNumbers(tNumbers); // Next the averageOfNumbers is called with tNumbers (as an argument)
 //This function will calculate the average of the numbers in the array.
-console.log(avg);//The calculated average is which is represented by avg variable, is printed to the browser.
+console.log(avg); // This will print 6.75.
 
 //----------------------------------------------------------------------------------
 
@@ -238,7 +239,7 @@ function whatsMyAverage(numbersArray) { // function is created, named with one p
     }
 
     const sum = numbersArray.reduce((total, num) => total + num, 0); //Here the sum is calculated using .reduce.
-    //The (total, num) => total + num, 0) function will pass to reduce which accumulates the sumb, adding each
+    //The (total, num) => total + num, 0) function will pass to reduce which accumulates the sum, adding each
     //number to the total.
     const average = sum / numbersArray.length; // Here the average is calculated by sum / numbersArray.length.
     return average; // after the average is calculated, this will return the average.
@@ -248,7 +249,7 @@ const numbersArr1 = [ 4, 12, 19]; // delcaring the first array, numbersArr1 (4,1
 const numbersArr2 = [ 1, 5, 9]; // declaring the second array, numbersArr2 (1,5,9).
 const avgResult = averagesBetweenArrays(numbersArr1, numbersArr2); // Here I'm calling averagesBetweenArrays function
 // with the two arrays as arguments. This will calculate the averages for both arrays and then compares them.
-console.log(avgResult.toString()); // This will print true to the browser because
+console.log(avgResult.toString()); // This will print "true"
 
 
 //---------------------------------------------------------------------------------
@@ -268,7 +269,7 @@ const willResult = willBuyDrink(isHot, money); // Another variable is defined, w
 // money represents moneyInPocket, it makes the return function isHotOutside true and moneyInPocket true because they
 //are both greater than 10.50.
 
-console.log(willResult); // This will print "true" to the browser.
+console.log(willResult); // This will print "true"
 
 //---------------------------------------------------------------------------------
 
@@ -287,7 +288,7 @@ const badTaste = true;
 const availableFiilters = 1;
 const changeResult = changeFilter(badTaste, availableFiilters);
 
-console.log(`My Results:` + changeResult);
+console.log(`My Results:` + changeResult); // This will print "My Result: true"
 // In my function, changeFilter, two conditions are checked. These are badTaste and filtersAvailable. Both 
 //conditions are Boolean checked. The first, badTaste is true because the water does not taste good like when you have
 //new filter installed. The second, availableFilters is true because we have one extra filter left from a value pack
