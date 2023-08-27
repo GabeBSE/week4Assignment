@@ -81,7 +81,7 @@ console.log(`Average number of letters per name: ${averageLetters}`);
 //space between each name using ' '. Then using another for loop like above, I am able to set up the loop and giving it
 //direction on how to execute. Using let i will start a loop variable with 0. Next i represents 0 which is less than
 //my array, which is names.length (loop condition). To continue the loop to the end of the array we 
-//add 1 to every element in the array to have the loop run all the way through the arry using i++. The next line if
+//add 1 to every element in the array to have the loop run all the way through the array using i++. The next line if
 //(i == 0) will execute the code in the curly braces when i is 0. I have concatenatedNames = names[i] in the {}/block of
 //code instructing not to leave a space when printing the first name (I didn't know exactly why I was getting a space
 //so I found that when adding my names array directly to my concatenatedNames string, it creates a space unless I 
