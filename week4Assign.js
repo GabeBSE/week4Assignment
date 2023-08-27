@@ -45,8 +45,8 @@ let averageAge = totalAge / agesA.length;
 // Backticks are used for template literals. Template literals work well with strings that are dynamically written.
 // ${} are used when using template literals. Using the $ and {} will make it easier to understand where dynamic values
 // placed.
-console.log("Ages array with new age added:", agesA);
-console.log(`Average age: ${averageAge}`);
+console.log("Ages array with new age added:", agesA); // This will print "Ages array with new age added:"
+console.log(`Average age: ${averageAge}`); // This will print "Average age:" and average.
 
 //-------------------------------------------------------------------------------
 
