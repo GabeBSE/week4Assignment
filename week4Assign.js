@@ -163,8 +163,8 @@ function myWord(Word, n) {
 }
 
 
-let result = myWord("cancatenated",3);
-console.log(result);
+let cResults = myWord("cancatenated",3);
+console.log(cResults);
 
 //------------------------------------------------------------------------------------ 
 
@@ -196,7 +196,7 @@ const numbers = [ 25, 60, 45, 30];//I'm defining the array of numbers here.
 const sumResult = willSumBeGreaterThan100(numbers);//Here I'm calling willSumBeGreaterThan100 function with the 
 //numbers array in parentheses. The function will calculate the sum of the numbers in the array to find out if
 // it's greater than 100.
-console.log(sumResult); //here my result is returned and printed to the browser.
+console.log(sumResult); //here my cResults is returned and printed to the browser.
 
 //----------------------------------------------------------------------------------
 
@@ -229,7 +229,7 @@ console.log(avg);//The calculated average is which is represented by avg variabl
 function averagesBetweenArrays(array1, array2) { // function created, named with two parameters.
     const average1 = whatsMyAverage(array1); // Calculating the average of the first array.
     const average2 = whatsMyAverage(array2); // Calculating the average of the second array.
-    return average1 > average2; // Here the averages are compared and a result is returned.
+    return average1 > average2; // Here the averages are compared and a cResults is returned.
 }
 
 function whatsMyAverage(numbersArray) { // function is created, named with one parameter.
@@ -263,7 +263,7 @@ function willBuyDrink(isHotOutside, moneyInPocket) { // function is definded wit
 
 const isHot = true; // variable is defined, which is set to true
 const money =20; // variable is defined, which is 20
-const willResult = willBuyDrink(isHot, money); // Another variable is defined, which is the result. This result is
+const willResult = willBuyDrink(isHot, money); // Another variable is defined, which is the cResults. This cResults is
 //based on the return expression, isHotOutside, moneyInPocket is > 10.50. Since isHot represents isHotOutside and 
 // money represents moneyInPocket, it makes the return function isHotOutside true and moneyInPocket true because they
 //are both greater than 10.50.
@@ -287,8 +287,7 @@ const badTaste = true;
 const availableFiilters = 1;
 const changeResult = changeFilter(badTaste, availableFiilters);
 
-console.log(`My result:` + changeResult);
-console.log("The End!");
+console.log(`My Results:` + changeResult);
 // In my function, changeFilter, two conditions are checked. These are badTaste and filtersAvailable. Both 
 //conditions are Boolean checked. The first, badTaste is true because the water does not taste good like when you have
 //new filter installed. The second, availableFilters is true because we have one extra filter left from a value pack
