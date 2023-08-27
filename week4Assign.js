@@ -75,7 +75,7 @@ let averageLetters = totalLetters / names.length;
 
 
 //This line of code will print the "Average number of letters per name:" as well as the calculated average.
-console.log(`Average number of letters per name: ${averageLetters}`);
+console.log(`Average number of letters per name: ${averageLetters}`); // Prints 3.83....5
 
 //Next I joined all names together to make one string. I declared concatenatedNames as my variable as well as providing
 //space between each name using ' '. Then using another for loop like above, I am able to set up the loop and giving it
@@ -103,7 +103,7 @@ for (let i = 0; i < names.length; i++) {
     }
 }
 
-console.log(concatenatedNames); // Prints "Sam, "
+console.log(concatenatedNames); // Prints "Sam Tommy Tim Sally Buck Bob "
 
 //-----------------------------------------------------------------------------------
 
@@ -111,7 +111,7 @@ console.log(concatenatedNames); // Prints "Sam, "
 // By using .length - 1   Ex.
 const array = [4, 2, 7, 9];
 const lastElement = array[array.length - 1];
-console.log('By using .length -1:' + lastElement); // Prints 9
+console.log('By using .length -1. Last element is:' + lastElement); // Prints "By using . length -1": 9
 
 //-----------------------------------------------------------------------------------
 // STEP 4. How do you access the first element of any array?
