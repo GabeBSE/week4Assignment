@@ -122,7 +122,9 @@ console.log('Question 4 example:' + firstElement);
 
 //----------------------------------------------------------------------------------
 
-// STEP 5.
+// STEP 5. Create a new array called nameLengths. Write a loop to iterate over the previously created names 
+// array and add the length of each name to the nameLengths array.
+
 //Same = 3, Tommy = 5, Tim = 3, Sally = 5, Buck = 4, Bob = 3  
 //First I converted the name characters into numbers values for each name. Then I declared nameLengths as my variable
 //and set it equal to the number values in an array ending the statement with semicolon.                   
@@ -139,7 +141,7 @@ let sum = 0;
 
 //----------------------------------------------------------------------------------- 
 
-// STEP 6. Write a loop...
+// STEP 6. Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array.
 for (let i = 0; i < nameLengths.length; i++) {
     sum += nameLengths[i];
 }
